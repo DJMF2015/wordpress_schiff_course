@@ -30,13 +30,13 @@ while (have_posts()) {
 <?php
 $testArray = get_pages(array(
            'child-of' => get_the_ID()
-));  
+));
 
 if ($theParent or $testArray) { ?>
-    <div class="page-links"> 
+    <div class="page-links">
      <h2 class="page-links__title"><a href="<?php echo get_permalink($theParent); ?>"><?php echo get_the_title($theParent); ?></a></h2>
-      <ul class="min-list"> 
-        <?php 
+      <ul class="min-list">
+        <?php
         if ($theParent){
           $findChildrenOf = $theParent;
         } else {
@@ -49,10 +49,10 @@ if ($theParent or $testArray) { ?>
           'sort_column' => 'menu_order'
         ));
         ?>
-      </ul> 
+      </ul>
     </div>
      <?php } ?>
-   
+
 
     <div class="generic-content">
       <?php the_content(); ?>

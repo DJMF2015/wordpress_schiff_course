@@ -16,3 +16,39 @@ function university_features(){
   add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'university_features');
+
+
+function my_register_sidebars() {
+  /* Register the  sidebar. */
+  register_sidebar(
+    array(
+      'id'          =>  'sidebar-1',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>'
+    ),
+    array(
+      'name'            => 'Sidebar Area',
+      'description'   =>  'sidebar widget area'
+    )
+  );
+
+  register_sidebar(
+    array(
+      'id'          =>  'sidebar-2',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>',
+    ),
+    array(
+      'id' => 'footer-1',
+      "name"=> 'Footer Area',
+
+      'description' => 'Footer Widget area'
+    )
+  );
+}
+
+add_action( 'widgets_init', 'my_register_sidebars' );

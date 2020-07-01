@@ -1,5 +1,5 @@
 <footer class="site-footer">
-
+  <?php ?>
     <div class="site-footer__inner container container--narrow">
 
       <div class="group">
@@ -13,7 +13,7 @@
           <div class="site-footer__col-two">
             <h3 class="headline headline--small">Explore</h3>
             <nav class="nav-list">
-           
+
               <ul>
                 <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
                 <li><a href="#">Programs</a></li>
@@ -31,6 +31,8 @@
                 <li><a href="#">Legal</a></li>
                 <li><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy</a></li>
                 <li><a href="#">Careers</a></li>
+                <li><a href="<?php echo home_url(); ?>/public_html/search" title="Search Page">Search Page</a></li>
+                <!-- <li><a href="<?php echo home_url(); ?>/search-page" title="Search Page">Search Page</a></li> -->
               </ul>
             </nav>
           </div>

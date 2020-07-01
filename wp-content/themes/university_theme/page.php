@@ -17,7 +17,11 @@ while (have_posts()) {
 
 
 <div class="container container--narrow page-section">
+ 
     <?php
+//Returns the ID of the post’s parent.
+
+//get_the_ID <!-- Retrieve sthe ID of the current item in the WordPress Loop.-->
     $theParent = wp_get_post_parent_id(get_the_ID());
     if ($theParent) { ?>
       <div class="metabox metabox--position-up metabox--with-home-link">
@@ -46,7 +50,9 @@ if ($theParent or $testArray) { ?>
         wp_list_pages(array(
           'title_li' => NULL,
           'child_of' => $findChildrenOf,
-          'sort_column' => 'menu_order'
+          'sort_column' => 'menu_order',
+          'post_type' => 'page',
+          'authors' => 'the_author'
         ));
         ?>
       </ul>

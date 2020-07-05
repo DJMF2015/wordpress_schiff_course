@@ -21,13 +21,18 @@
             <li><a href="#">Events</a></li>
             <li><a href="#">Campuses</a></li>
             <li><a href="#">Blog</a></li>
+
+             <li><a href="public_html/legal">Legal</a></li>
           <li><a href="<?php echo home_url(); ?>/search" title="Search Page">Search  </a></li>
           </ul>
         </nav>
         <div class="site-header__util">
           <a href="#" class="btn btn--small btn--orange float-left push-right">Login</a>
           <a href="#" class="btn btn--small  btn--dark-orange float-left">Sign Up</a>
-          <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+          <span class="search-trigger js-search-trigger">
+
+          <i class="fa fa-search" aria-hidden="true"></i></span>
+
         </div>
       </div>
     </div>

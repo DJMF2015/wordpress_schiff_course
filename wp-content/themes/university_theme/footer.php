@@ -28,7 +28,7 @@
             <nav class="nav-list">
 
               <ul class="nav-list min-list">
-                <li><a href="#">Legal</a></li>
+                <li><a href="/public_html/legal">Legal</a></li>
                 <li><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="<?php echo home_url(); ?>/public_html/search" title="Search Page">Search Page</a></li>

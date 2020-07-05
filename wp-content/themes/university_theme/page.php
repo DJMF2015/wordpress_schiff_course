@@ -10,14 +10,14 @@ while (have_posts()) {
     <div class="page-banner__content container container--narrow">
       <h1 class="page-banner__title"><?php the_title(); ?></h1>
       <div class="page-banner__intro">
-        <p>DONT FORGET TO REPLACE ME LATER</p>
+        <p>Welcome to the blof and latest news</p>
       </div>
     </div>
   </div>
 
 
 <div class="container container--narrow page-section">
- 
+
     <?php
 //Returns the ID of the post’s parent.
 
@@ -63,7 +63,7 @@ if ($theParent or $testArray) { ?>
     <div class="generic-content">
       <?php the_content(); ?>
     </div>
-
+ 
   </div>
 
 <?php }

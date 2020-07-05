@@ -29,6 +29,7 @@ function my_register_sidebars() {
       'after_title'   => '</h3>'
     ),
     array(
+
       'name'            => 'Sidebar Area',
       'description'   =>  'sidebar widget area'
     )

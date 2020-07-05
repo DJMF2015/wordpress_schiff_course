@@ -8,13 +8,14 @@ get_header(); ?>
   <div class="page-banner__content container container--narrow">
     <h3 class="page-banner__title">Welcome to the Blog!</h3>
     <div class="page-banner__intro">
-      <p>Keep up wth our latest news</p>
+      <p>Keep up with our latest news</p>
     </div>
   </div>
 </div>
 <div class="container container--narrow page-section">
- 
+<a href="index.php?page_id=120" title="Search Page">Search Page</a>
   <?php
+ get_search_form();
   while(have_posts()){
     the_post();?>
     <div class="post-item">
@@ -28,8 +29,11 @@ get_header(); ?>
           <?php the_excerpt(); ?>
           <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Continue Reading &raquo;</a></p>
         </div>
+
       </div>
     <?php }
+    //add pagination egs 1
+
     echo paginate_links();
     ?>
   </div>

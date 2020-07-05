@@ -1713,4 +1713,7 @@ margin: 20px 0;
     border-bottom: none;
     margin-bottom: 0;
   }
-
+aside.sidebar { float:right; margin: 0 15px; width: 290px;
+}
+aside.sidebar ul { list-style:none;
+}
